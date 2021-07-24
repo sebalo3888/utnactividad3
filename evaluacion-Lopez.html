@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Cine  </title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+	
+		<h1>Evaluación Unidad III</h1>
+        <img src='cine-mark.jpg'>
+		<script type="text/javascript">
+            var entradasJuan = Number(prompt ("Cuantas entradas corto Juan?"))
+            var entradasPepe = Number(prompt ("Cuantas entradas corto Pepe?"))
+
+            var precioEntradas = 150
+            var entradasVendidas = entradasJuan + entradasPepe
+            var dineroGanado = entradasVendidas * precioEntradas
+            var sueldoEmpleado = dineroGanado / 2
+            var dineroDescontado = dineroGanado - 100
+
+            var peliculas = [' Breaking Bad ',' Black Mirror ',' Suits ',' Peaky Blinders ',' Black List ']
+
+            document.write ('<h2> Cantidad de entradas vendidas: ' + entradasVendidas+ '<h2>')
+            document.write ('<h2> Cantidad de dinero ganado en el día: ' + dineroGanado+ '<h2>')
+            document.write ('<h2> Sueldo de cada empleado: ' + sueldoEmpleado+ '<h2>')
+            document.write ('<h2> Dinero ganado con descuento: ' + dineroDescontado+ '<h2>')
+            
+            document.write('<h3>'+ peliculas.sort()+ '<h3>');
+
+
+            
+            
+		</script>
+	
+</body>
+</html>
